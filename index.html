@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Three Souls — Our Little Universe ♡</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=DM+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- PASSWORD GATE -->
+<section id="gate" class="gate">
+  <div class="gate-stars"></div>
+  <div class="gate-card">
+    <p class="eyebrow">A PRIVATE LITTLE UNIVERSE</p>
+    <div class="gate-heart">♡</div>
+    <h1>Three souls.<br><em>One story.</em></h1>
+    <p>This isn't just a website. It's a box full of moments we were lucky enough to live.</p>
+    <div class="password-row">
+      <input id="passwordInput" type="password" placeholder="enter our secret password" autocomplete="off">
+      <button id="unlockBtn">unlock ✦</button>
+    </div>
+    <small>hint: FOREVER3</small>
+    <p id="passwordError" class="error"></p>
+  </div>
+</section>
+
+<!-- CINEMATIC INTRO -->
+<section id="intro" class="intro hidden">
+  <div class="film"></div>
+  <p class="intro-line one">once upon a time...</p>
+  <p class="intro-line two">three strangers</p>
+  <p class="intro-line three">walked into the same chapter.</p>
+  <p class="intro-line four">and somehow...</p>
+  <h1 class="intro-title">they became <em>home.</em></h1>
+  <button id="skipIntro">skip intro</button>
+</section>
+
+<div id="site" class="site hidden">
+<div class="grain"></div>
+<div class="cursor-glow"></div>
+
+<nav>
+  <a class="logo" href="#home">3 souls <span>∞</span></a>
+  <div class="nav-links">
+    <a href="#story">story</a>
+    <a href="#gallery">memories</a>
+    <a href="#letters">letters</a>
+    <a href="#future">future</a>
+  </div>
+  <button id="soundBtn" class="sound-btn">♪ ambience</button>
+</nav>
+
+<main>
+<section id="home" class="hero">
+  <div class="hero-copy reveal">
+    <p class="eyebrow">A DIGITAL TIME CAPSULE · FINAL YEAR · ∞</p>
+    <h1>Some people<br>become <em>home.</em></h1>
+    <p class="hero-text">We came here to study, collect attendance and somehow survive college. But somewhere between the ordinary days, silly selfies and endless conversations, we found something much more beautiful: each other.</p>
+    <div class="hero-actions">
+      <a href="#story" class="btn primary">open our memories ↓</a>
+      <button class="btn ghost" id="randomMemory">surprise me ✦</button>
+    </div>
+  </div>
+  <div class="hero-photos reveal delay">
+    <div class="tape"></div>
+    <div class="polaroid main-polaroid"><img src="assets/final yr sps.jpeg"><p>the final chapter ♡</p></div>
+    <div class="polaroid mini-polaroid p1"><img src="assets/WhatsApp Image 2026-08-31 at 12.04.30 PM.jpeg"><p>professional nonsense</p></div>
+    <div class="polaroid mini-polaroid p2"><img src="assets/First.jpeg"><p>where it began</p></div>
+    <div class="scribble">♡</div>
+  </div>
+  <div class="scroll-note">scroll to remember <span>↓</span></div>
+</section>
+
+<section class="countdown-section">
+  <div class="countdown-card reveal">
+    <p class="eyebrow">UNTIL OUR FINAL GOODBYE TO COLLEGE</p>
+    <h2>Every second is becoming a memory.</h2>
+    <div class="countdown" id="countdown">
+      <div><b id="days">--</b><span>days</span></div>
+      <div><b id="hours">--</b><span>hours</span></div>
+      <div><b id="minutes">--</b><span>minutes</span></div>
+      <div><b id="seconds">--</b><span>seconds</span></div>
+    </div>
+    <p class="tiny-note">Change the graduation date inside <code>script.js</code> ♡</p>
+  </div>
+</section>
+
+<section id="story" class="story section">
+  <div class="section-intro reveal">
+    <p class="eyebrow">CHAPTER 01 · THE BEGINNING</p>
+    <h2>We didn't plan this.<br><em>It just happened.</em></h2>
+    <p>The best friendships are sometimes the accidental ones. One random conversation. One seat nearby. One shared laugh. And suddenly, years later, you cannot imagine the story without them.</p>
+  </div>
+  <div class="timeline">
+    <article class="memory-card left reveal">
+      <div class="memory-number">01</div>
+      <div class="memory-image"><img src="assets/mem sps.jpeg"></div>
+      <div class="memory-copy"><span>FIRST YEAR</span><h3>The strangers chapter.</h3><p>We were just people in the same college. None of us knew that the random faces around us would someday become the hardest people to say goodbye to.</p></div>
+    </article>
+    <article class="memory-card right reveal">
+      <div class="memory-number">02</div>
+      <div class="memory-image"><img src="assets/The Three Monkies.jpeg"></div>
+      <div class="memory-copy"><span>THE CHAOS ERA</span><h3>Inside jokes were born.</h3><p>Somewhere along the way, normal conversations became weird references that nobody else could understand. That was probably the moment we became us.</p></div>
+    </article>
+    <article class="memory-card left reveal">
+      <div class="memory-number">03</div>
+      <div class="memory-image"><img src="assets/Annual.jpeg"></div>
+      <div class="memory-copy"><span>THE PRETTY DAYS</span><h3>Photos, outfits & memories.</h3><p>We thought we were simply taking pictures. Turns out, we were quietly saving pieces of time.</p></div>
+    </article>
+    <article class="memory-card right reveal">
+      <div class="memory-number">04</div>
+      <div class="memory-image"><img src="assets/WhatsApp Image 2026-08-31 at 12.04.30 PM.jpeg"></div>
+      <div class="memory-copy"><span>FINAL YEAR</span><h3>How did we get here so fast?</h3><p>And now every ordinary day feels important, because soon these will be the stories we tell beginning with: “remember when...”</p></div>
+    </article>
+  </div>
+</section>
+
+<section class="quote-band">
+  <div class="reveal">
+    <span class="big-quote">“</span>
+    <h2>We didn't know we were making memories.<br>We just knew we were having <em>fun.</em></h2>
+    <p>— and somehow that became everything.</p>
+  </div>
+</section>
+
+<section id="gallery" class="gallery section">
+  <div class="gallery-head reveal">
+    <div><p class="eyebrow">CHAPTER 02 · THE EVIDENCE</p><h2>A gallery of<br><em>our little universe.</em></h2></div>
+    <p>Every photograph here holds a story. Some are funny. Some are embarrassing. Some are impossible to explain. All of them are ours.</p>
+  </div>
+  <div class="photo-wall">
+    <button class="photo-card tilt-a" data-img="assets/3monkies.jpeg" data-caption="The evidence of our collective nonsense."><img src="assets/3monkies.jpeg"><span>01 · chaos club</span></button>
+    <button class="photo-card tilt-b" data-img="assets/siva.jpeg" data-caption="One of those quiet little days that became a favorite."><img src="assets/siva.jpeg"><span>02 · us</span></button>
+    <button class="photo-card tilt-c" data-img="assets/ps.jpeg" data-caption="No pose is complete without at least one weird expression."><img src="assets/ps.jpeg"><span>03 · candid-ish</span></button>
+    <button class="photo-card tilt-d" data-img="assets/pss 1st yr.jpeg" data-caption="Some friendships are simply photogenic."><img src="assets/pss 1st yr.jpeg"><span>04 · pretty days</span></button>
+    <button class="photo-card tilt-e" data-img="assets/mem sps.jpeg" data-caption="Different outfits. Same people. Same comfort."><img src="assets/mem sps.jpeg"><span>05 · core memory</span></button>
+    <button class="photo-card tilt-f" data-img="assets/pss mem.jpeg" data-caption="The kind of moment we'd never put in a textbook but never forget."><img src="assets/pss mem.jpeg"><span>06 · ordinary magic</span></button>
+    <button class="photo-card tilt-g" data-img="assets/sps.jpeg" data-caption="The three of us in our natural habitat: together."><img src="assets/sps.jpeg"><span>07 · trio energy</span></button>
+    <button class="photo-card tilt-h" data-img="assets/sp.jpeg" data-caption="A memory that deserves its own little corner."><img src="assets/sp.jpeg"><span>08 · still smiling</span></button>
+    <button class="photo-card tilt-i" data-img="assets/ss.jpeg" data-caption="One photo, too many feelings."><img src="assets/ss.jpeg"><span>09 · forever file</span></button>
+    <button class="photo-card tilt-j" data-img="assets/symbo.jpeg" data-caption="Just us being us. That was always enough."><img src="assets/symbo.jpeg"><span>10 · inside joke</span></button>
+  </div>
+</section>
+
+<section class="memory-machine">
+  <div class="machine-card reveal">
+    <p class="eyebrow">THE MEMORY MACHINE</p>
+    <h2>Feeling nostalgic?</h2>
+    <p>Press the button. Let fate choose one little piece of our story.</p>
+    <button id="memoryMachine" class="machine-btn">unlock a memory ✦</button>
+    <div id="machineResult" class="machine-result">waiting for a little magic...</div>
+  </div>
+</section>
+
+<section id="letters" class="letters section">
+  <div class="section-intro reveal">
+    <p class="eyebrow">CHAPTER 03 · THE THINGS I DON'T SAY ENOUGH</p>
+    <h2>Three hearts.<br><em>Three secret letters.</em></h2>
+    <p>Click a letter. Some feelings deserve to be written down before time gets too fast.</p>
+  </div>
+
+  <div class="letter-grid">
+    <button class="secret-letter reveal" data-letter="0">
+      <span class="seal">♡</span><span class="letter-no">LETTER 01</span><h3>To the one who feels like home</h3><span class="open">open →</span>
+    </button>
+    <button class="secret-letter reveal delay" data-letter="1">
+      <span class="seal">✦</span><span class="letter-no">LETTER 02</span><h3>To the one who made life funnier</h3><span class="open">open →</span>
+    </button>
+    <button class="secret-letter reveal delay-2" data-letter="2">
+      <span class="seal">☾</span><span class="letter-no">LETTER 03</span><h3>To the three of us</h3><span class="open">open →</span>
+    </button>
+  </div>
+</section>
+
+<section id="future" class="future section">
+  <div class="future-inner reveal">
+    <p class="eyebrow">CHAPTER 04 · NOT THE END</p>
+    <h2>Things we still<br>have to <em>do together.</em></h2>
+    <div class="bucket-list">
+      <label><input type="checkbox"> Take a trip together without cancelling</label>
+      <label><input type="checkbox"> Recreate our oldest photo</label>
+      <label><input type="checkbox"> Meet after graduation and gossip for hours</label>
+      <label><input type="checkbox"> Take a photo together 10 years from now</label>
+      <label><input type="checkbox"> Never let "busy" become goodbye</label>
+    </div>
+    <p class="tiny-note">Your ticks are saved on this browser automatically.</p>
+  </div>
+</section>
+
+<section class="letter-final section">
+  <div class="letter-wrap reveal">
+    <div class="letter-photo"><img src="assets/final yr sps.jpeg"></div>
+    <div class="letter-content">
+      <p class="eyebrow">A NOTE FOR YOU BOTH</p>
+      <h2>To my favorite people,</h2>
+      <div class="letter-text">
+        <p>I wish I could freeze a few moments. Not the big ones. Just the ordinary ones — sitting together, taking random photos, laughing at something stupid, complaining about college, and knowing that tomorrow we would meet again.</p>
+        <p>Because soon, tomorrow won't look like this anymore.</p>
+        <p>And honestly? I already know I'm going to miss us.</p>
+        <p>But this isn't a goodbye page. This is a promise. A reminder that before life takes us in different directions, three people shared one beautiful chapter.</p>
+        <p><strong>No matter where we go, please remember this:</strong> you will always have a place in my life that nobody else can replace.</p>
+      </div>
+      <p class="sign">with all my love,<br><span>your forever friend ♡</span></p>
+    </div>
+  </div>
+</section>
+
+<section class="finale">
+  <div class="finale-content reveal">
+    <p class="eyebrow">THE END? NEVER.</p>
+    <h2>College may end.<br><em>We don't have to.</em></h2>
+    <p>Here's to future reunions, accidental calls, more terrible selfies, more inside jokes and a friendship that refuses to become just a memory.</p>
+    <button id="confettiBtn" class="btn primary">for us, always ♡</button>
+  </div>
+</section>
+</main>
+
+<footer>
+  <span>made with too many memories & a little bit of missing you already</span>
+  <span>3 souls · 1 story · ∞ forever</span>
+</footer>
+</div>
+
+<!-- PHOTO LIGHTBOX -->
+<div id="lightbox" class="lightbox">
+  <button id="closeLightbox">×</button>
+  <div class="lightbox-inner"><img id="lightboxImg" src=""><p id="lightboxCaption"></p></div>
+</div>
+
+<!-- SECRET LETTER MODAL -->
+<div id="letterModal" class="modal">
+ <button id="closeLetter">×</button>
+ <article class="opened-letter">
+   <p id="modalEyebrow" class="eyebrow"></p>
+   <h2 id="modalTitle"></h2>
+   <div id="modalText"></div>
+   <p class="sign">always,<br><span>your best friend ♡</span></p>
+ </article>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
